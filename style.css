@@ -230,25 +230,15 @@ main ul {
 
 /* Footer Sections*/
 footer {
-	border-top: 300px;
-	width: 100%
-	height: 300px;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
 	background-color: #373737;
 }
 #footerPartOne {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	text-align: center;
 	color: #00a1b1;
 	font-weight: bolder;
 }
 .footerPieces {
-	width: 33.333333%;
 	text-shadow: 1px 1px #000;
+	text-align: center;
 }
 footer h3 {
 	letter-spacing: 2px;
@@ -258,27 +248,33 @@ footer h3 {
 }
 #socialMediaSection {
 	background-color: #373737;
-	height: auto;
-}
-.socialMediaIcons {
-	display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-around;
-}
-.socialMediaIcons span {
-	padding: 10px
-}
-#socialIconParent {
 	
 }
+.socialMediaIcons {
+	display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+.socialMediaIcons span {
+	padding: 10px;
+}
+#socialMediaContentContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#socialMediaIconsContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
 #contactUsSection {
-	background-color: background-color: #373737;
 	display: flex;
 	flex-direction: column;
 	background: linear-gradient(
-      rgba(30, 33, 33, 0.75), 
-      rgba(30, 33, 33, 0.75)), url('cscgooglemapsscreenshot.png');
+      rgba(30, 33, 33, 0.70), 
+      rgba(30, 33, 33, 0.70)), url('cscgooglemapsscreenshot.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size:cover;
@@ -294,8 +290,9 @@ footer h3 {
 
 /*Copyright*/
 #copyright {
-	display: flex;
-	justify-content: center;
+	text-align: center;
+	color: white;
+	letter-spacing: 0.75px;
 }
 /*Nav bar hamburger menu*/
 @media only screen and (max-device-width: 1200px) {
@@ -307,33 +304,51 @@ footer h3 {
 		flex-wrap: wrap;
 	}
 }
-
+@media only screen and (max-device-width: 349px) {
+	*{
+		display: none;
+	}
+}
 
 @media only screen 
-  and (min-device-width: 375px) 
+  and (min-device-width: 350px) 
   and (max-device-width: 799px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 /*Logo Size bigger on mobile*/
 	#logoColor {
-	min-width:450px;
-}
+		min-width:450px;
+	}
 /*Wrapping the two pics at the top*/
 	#sectionOne {
-			flex-wrap: wrap;
-		}
+		flex-wrap: wrap;
+	}
 	main img {
 		max-width: 90vw;
 	}
-}
+/*Wrapping the three footer sections*/
+	/*#footerPieces {
+		height: auto;
+		
+	}
+	#footerPartOne {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+	#contactUsSection {
+		padding-bottom: 20px;
+	}*/
 
+}
 /*Large screen responses*/
 @media only screen 
   and (min-device-width: 800px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
   	#sectionOne {
-			flex-wrap: nowrap;
-		}
+		flex-wrap: nowrap;
+	}
 }
 
 
