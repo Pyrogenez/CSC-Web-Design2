@@ -4,12 +4,114 @@
 
 <head>
 		<title>CSC</title>
+		<link href="../style.css" type="text/css" rel="stylesheet">
+		<script src="script.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Roboto" rel="stylesheet">
-</head>
-<main>
-<script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fcls20.bullhornstaffing.com%2FJobBoard%2FStandard%2FJobOpportunitiesRSS.cfm%3FprivateLabelID%3D8901%26category%3D&chan=y&targ=y&utf=y&pc=y&html=a"  charset="UTF-8" type="text/javascript"></script>
 
-<noscript>
-<a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fcls20.bullhornstaffing.com%2FJobBoard%2FStandard%2FJobOpportunitiesRSS.cfm%3FprivateLabelID%3D8901%26category%3D&chan=y&targ=y&utf=y&pc=y&html=y">View RSS feed</a>
-</noscript>
-</main>
+</head>
+
+<header>
+	<nav>
+		<div id="logoContainer">
+			<img id="logoColor" src="../icons_pics//Logo2.png"/>
+		</div>
+		<!--Full Menu for non-mobile-->
+		<div id="menuContainer">
+				<a href="index.html"><h1 class="menuItem" id="home">Home</h1></a>
+				<a href="WorkforceSolutions.html"><h1 class="menuItem" id="workforceSolutions">Workforce Solutions</h1></a>
+				<a href="Employers.html"><h1 class="menuItem" id="employers">Employers</h1></a>
+				<a href="jobseekers/JobSeekers.html"><h1 class="menuItem" id="jobSeekers">Job Seekers</h1></a>
+				<a href="About.html"><h1 class="menuItem" id="about">About</h1></a>
+				<a href="Contact.html"><h1 class="menuItem" id="contact">Contact</h1></a>
+				
+		</div>
+		<!--Hamburger Menu for Mobile-->
+		<div id="hamburgerMenuContainer">
+			<a href="#" id="menu-icon"><section id="hamburgerMenuIcon"></section></a>
+				<ul>
+					<a href="index.html" class="current"><li class="menuItem" id="home">Home</li></a>
+					<a href="WorkforceSolutions.html"><li class="menuItem" id="workforceSolutions">Workforce Solutions</li></a>
+					<a href="Employers.html"><li class="menuItem" id="employers">Employers</li></a>
+					<a href="jobseekers/JobSeekers.html"><li class="menuItem" id="jobSeekers">Job Seekers</li></a>
+					<a href="About.html"><li class="menuItem" id="about">About</li></a>
+					<a href="Contact.html"><li class="menuItem" id="contact">Contact</li></a>
+				</ul>
+			</section>
+		</div>
+	</nav>
+</header>
+<section id="rssfeed">	
+	<script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fcls20.bullhornstaffing.com%2FJobBoard%2FStandard%2FJobOpportunitiesRSS.cfm%3FprivateLabelID%3D8901%26category%3D&chan=y&targ=y&utf=y&pc=y&html=a"  charset="UTF-8" type="text/javascript"></script>
+
+	<noscript>
+	<a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fcls20.bullhornstaffing.com%2FJobBoard%2FStandard%2FJobOpportunitiesRSS.cfm%3FprivateLabelID%3D8901%26category%3D&chan=y&targ=y&utf=y&pc=y&html=y">View RSS feed</a>
+	</noscript>
+</section>
+<footer>
+	<section id="footerPartOne">
+		<section class="footerPieces" id="facebookFeedSection">
+			<br></br>
+			<h3 id="footerTopWord">Social Media</h3>
+			<br></br>
+			<div id="socialMediaContentContainer">
+				<span id="facebookFeedContainer">
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcareerstrategyinc%2F&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+				</span>
+				<div></div>
+				<div></div>
+				<div></div>
+				<span id="socialMediaIconsContainer">
+					<div class="socialMediaIcons" id="socialIconParentOne">
+						<a href="https://www.facebook.com/careerstrategyinc"><img src="../icons_pics//facebookIcon.png" title="FaceBook Link"/></a>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<a href="https://www.linkedin.com/company/careerstrategyconsultants"><img src="../icons_pics//linkedinIcon.png" title="LinkedIn Link"/></a>
+					</div>
+						<br></br>
+					<div class="socialMediaIcons" id="socialIconParentTwo">
+						<a href="https://twitter.com/_CareerStrategy"><img src="../icons_pics//twitterIcon.png" title="Twitter Link"/></a>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<a href="mailto:recruiter@careerstrategyinc.com"><img src="../icons_pics//emailIcon.png"/></a>
+						<br></br>
+						<br></br>
+					</div>	
+				</span>
+			</div>
+		</section>
+		<br></br>
+		<br></br>
+		<section class="footerPieces" id="contactUsSection">
+			<br></br>
+			<h3 id="footerTopWord">Contact Us</h3>
+			<br></br>
+		
+				<p id="contactAddress">24 West 39th Street
+					<br>
+					Shadyside, Ohio 43947
+					</br>
+					<br>
+					Phone: 740-325-1151
+					</br>
+					<br></br>
+					<br></br>
+					E-mail: recruiter@careerstrategyinc.com
+					<br></br>
+					<br></br>
+				</p>
+		</section>
+	</section>
+	<section id="footerPartTwo">
+			<div id="copyright">
+				<h6>© Copyright 2018 Career Strategy Consultants, Inc.</h6>
+			</div>
+	</section>
+</footer>

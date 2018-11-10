@@ -53,7 +53,7 @@ li {
 	#hamburgerMenuIcon {
 		width: 72px;
 		height: 72px;
-		background-image: url('hamburgerMenuIcon.png');
+		background-image: url('icons_pics/hamburgerMenuIcon.png');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -210,7 +210,8 @@ main img {
 }
 main ul {
 	list-style-type: none;
-	color: #e57600;
+	color: #AF3800;
+	/*color: #e57600;*/
 	font-size: 20px;
 }
 #sectionTwoBottom {
@@ -277,7 +278,7 @@ footer h3 {
 	flex-direction: column;
 	background: linear-gradient(
       rgba(30, 33, 33, 0.70), 
-      rgba(30, 33, 33, 0.70)), url("cscgooglemapsscreenshot.png");
+      rgba(30, 33, 33, 0.70)), url("icons_pics/cscgooglemapsscreenshot.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size:cover;
@@ -363,7 +364,10 @@ footer h3 {
 
 
 
-
+/*JOB SEEKERS PAGE*/
+#rssfeed {
+	overflow: auto;
+}
 
 
 
