@@ -144,10 +144,10 @@ main {
 
 }
 .sectionOne {
-	padding: 17px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
 	justify-content: space-between;
 	text-align: center;
 	width: 100%;
@@ -156,7 +156,8 @@ main {
 	background-color: #EAEAEA;
 	display: flex;
 	flex-direction: row;
-
+	justify-content: center;
+	overflow: auto;
 }
 .sectionOne button {
 	font-weight: bold;
@@ -172,8 +173,6 @@ main {
 	text-decoration:none;
 	letter-spacing: .6px;
 	max-width: 200px;
-
-	
 }
 .sectionOne button:hover {
 	border:2px solid #373737;
@@ -182,18 +181,21 @@ main {
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 #findCandidates {
-	
+	border-right: 2px groove #373737;
 }
 main img {
 	max-width: 500px;
+}
 
+#searchJobs {
+	background-color: #EA;	
+}
+
+.sectionOneImage {
+	min-width: 500px;
 }
 #sectionOneEmployerImage {
-	
-}
-#searchJobs {
-	background-color: #EA;
-	
+	padding-top: 30px;
 }
 /*Second Section - Industries We Serve*/
 #industriesWeServe {
@@ -205,18 +207,14 @@ main img {
 	height: 600px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 .sectionTwoPieces {
 	display: flex;
 	flex-direction: column;
-	height:45%;
-}
-#sectionTwoTop {
-
+	justify-content: center;
 }
 
-/*********************************************THIS IS THE ORANGE ICONS*****************/
 main ul {
 	list-style-type: none;
 	display: flex;
@@ -267,14 +265,13 @@ footer h3 {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	width: 75%;
+	width: 80%;
 }
 #socialMediaIconsContainer {
-	clear: left;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	height: 250px;
+	height: 400px;
 	align-content: center;
 }
 #contactUsSection {
@@ -294,6 +291,9 @@ footer h3 {
 	font-size: 40px;
 	font-weight: bolder;
 	color: #00a1b1;
+}
+#contactAddress {
+	text-align: center;
 }
 
 /*Copyright*/
@@ -331,16 +331,20 @@ footer h3 {
 	main img {
 		max-width: 90vw;
 	}
-	
+	#findCandidates {
+	border-right: 0px;
+	border-bottom: 2px groove #373737;
+	}
+	main ul {
+		font-size: 25px;
+	}
 }
 /*Large screen responses*/
 @media only screen 
   and (min-device-width: 800px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
-  	#sectionOne {
-		flex-wrap: nowrap;
-	}
+  	
 
 }
 
