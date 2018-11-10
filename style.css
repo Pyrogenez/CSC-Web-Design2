@@ -78,17 +78,21 @@ li {
 	}
 
 	#hamburgerMenuContainer li {
+		color: #00a1b1;
+		font-weight: bolder;
 		text-align: center;
 		width: 100%;
 		padding: 10px 0;
 		margin: 0;
+		font-size: 35px;
 	}
 
 	#hamburgerMenuContainer:hover ul {
 		display: block;
 	}
 	#menuItem {
-			color: #00a1b1;
+		color: #00a1b1;
+
 	}
 
 }
@@ -254,15 +258,17 @@ footer h3 {
 }
 #socialMediaSection {
 	background-color: #373737;
-
+	height: auto;
 }
 .socialMediaIcons {
 	display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    justify-content: space-around;
 }
-
+.socialMediaIcons span {
+	padding: 10px
+}
 #socialIconParent {
 	
 }
@@ -309,7 +315,7 @@ footer h3 {
   and (-webkit-min-device-pixel-ratio: 2) { 
 /*Logo Size bigger on mobile*/
 	#logoColor {
-	min-width:350px;
+	min-width:450px;
 }
 /*Wrapping the two pics at the top*/
 	#sectionOne {
