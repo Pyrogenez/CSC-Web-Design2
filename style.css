@@ -203,27 +203,26 @@ main img {
 #sectionTwo {
 	background-color: #B5E3E8;
 	text-align: center;
-	height: 600px;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-.sectionTwoPieces {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
 main ul {
 	list-style-type: none;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: space-around;
 	color: #e57600;
 	font-size: 20px;
 }
-
+#sectionTwoBottom {
+	display: flex;
+	flex-direction: column;
+}
+.industryList {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
 /* Footer Sections*/
 footer {
 	background-color: #373737;
