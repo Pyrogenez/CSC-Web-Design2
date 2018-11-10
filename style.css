@@ -278,7 +278,7 @@ footer h3 {
 	flex-direction: column;
 	background: linear-gradient(
       rgba(30, 33, 33, 0.70), 
-      rgba(30, 33, 33, 0.70)), url('cscgooglemapsscreenshot.png');
+      rgba(30, 33, 33, 0.70)), url("cscgooglemapsscreenshot.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size:cover;
