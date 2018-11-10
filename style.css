@@ -262,9 +262,9 @@ footer h3 {
 #socialMediaContentContainer {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	width: 80%;
+	width: 65%;
 }
 #socialMediaIconsContainer {
 	display: flex;
