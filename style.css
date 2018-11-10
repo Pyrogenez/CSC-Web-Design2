@@ -335,8 +335,16 @@ footer h3 {
 	border-right: 0px;
 	border-bottom: 2px groove #373737;
 	}
+	#sectionOneButtons {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 	main ul {
 		font-size: 25px;
+	}
+	.sectionOne button {
+		font-size: 27px;
+		max-width: 4000px;
 	}
 }
 /*Large screen responses*/
