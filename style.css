@@ -1,9 +1,10 @@
-/*Adjustments for Chrome Browser*/
+/*Adjustments for Browser Presets*/
 
 * {
 	margin: 0;
 	font-family: Roboto;
 	padding: 0px;
+	box-sizing: border-box;
 	/*border: black;
 	border-style: solid;
 	border-width: 1px;*/
@@ -136,12 +137,32 @@ header nav{
   	margin: 0;
   	color: #333;
 }
-
-
-/*First two buttons - searching for candidates and jobs*/
-main {
+/*Banner and Animation*/
+#bannerContainer {
+	/*background-image: linear-gradient(to left bottom, #000000, #2c232d, #404661, #347293, #00a1b1);*/
+	min-height: 350px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #00a1b1;
+	align-items: center;
+}
+.bannerWords {
+	font-size: 45px;
+	font-weight: bolder;
+	color: #FFF;
+	display: inline-block;
+	position: relative;
+}
+#successbanner {
+	position: absolute;
 
 }
+#prioritybanner {
+	position: relative;
+}
+
+/*First two buttons - searching for candidates and jobs*/
 .sectionOne {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -210,9 +231,9 @@ main img {
 }
 main ul {
 	list-style-type: none;
-	color: #AF3800;
+	color: #827C68;
 	/*color: #e57600;*/
-	font-size: 20px;
+	font-size: 30px;
 }
 #sectionTwoBottom {
 	display: flex;
