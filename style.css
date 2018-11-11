@@ -366,7 +366,7 @@ footer h3 {
 
 /*JOB SEEKERS PAGE*/
 #rssfeed {
-	overflow: auto;
+	display: none;
 }
 
 
