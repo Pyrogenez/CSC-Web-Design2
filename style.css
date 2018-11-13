@@ -347,7 +347,7 @@ a[href^="mailto"]{
 		font-size: 50px;
 	}
 	#sectionTwoTop {
-		width: 80%;
+		/*width: 80%;*/
 	}
 }
 /*Large screen responses*/
