@@ -226,7 +226,7 @@ main img {
 	height: auto;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	width: 100%;
 }
 #sectionTwoDescription {
 	font-size: 25px;
@@ -346,8 +346,8 @@ a[href^="mailto"]{
 	#industriesWeServe {
 		font-size: 50px;
 	}
-	#sectionTwoDescription {
-		font-size: 20px;
+	#sectionTwoTop {
+		width: 80%;
 	}
 }
 /*Large screen responses*/
