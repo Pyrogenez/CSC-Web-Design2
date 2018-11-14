@@ -160,6 +160,20 @@ header nav{
 	position: relative;
 }
 */
+#bannerContainer {
+	width: 100%;
+	height: 250px;
+	position: relative;
+}
+svg {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+}
+
+
+
 /*First two buttons - searching for candidates and jobs*/
 .sectionOne {
 	margin-top: 20px;
@@ -233,7 +247,7 @@ main img {
 }
 main ul {
 	list-style-type: none;
-	color: #001F74;
+	color: #6d6d6d;
 	font-size: 25px;
 }
 #sectionTwoBottom {
