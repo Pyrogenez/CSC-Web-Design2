@@ -27,6 +27,31 @@ ul {
 
 
 
+label {
+  width: 200px;
+  display: block;
+}
+
+input, textarea {
+  width: 200px;
+  margin: 5px 0;
+  border: 1px solid #CCC;
+}
+
+p {
+  width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
 .current {
 
 	color: #2262AD;
@@ -157,6 +182,13 @@ header nav{
 	border-bottom: 400px solid transparent;
 }
 
+HTML:
+<section id="banner">
+	<div class="yourContainer"></div>
+	<div class="threeWordContainer"></div>
+</section>
+
+*/
 
 
 /*First two buttons - searching for candidates and jobs*/
