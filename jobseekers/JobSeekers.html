@@ -7,54 +7,6 @@
 		<link href="../style.css" type="text/css" rel="stylesheet">
 		<script src="script.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Roboto" rel="stylesheet">
-			<script>
-  var rssDoc = new ActiveXObject("MSXML2.DOMDocument.3.0");
-  rssDoc.onreadystatechange = popData;
-
-  function displayRSS(path){
- mainTitle.href = "";
- mainTitle.innerHTML = "";
- items.innerHTML = "";
-
- rssDoc.load(path);
-  }
-
-  function popData(){
-    if(rssDoc.readyState!=4)
-  return;
-
- // Title
- mainTitle.href = rssDoc.selectSingleNode("/rss/channel/link").text;
- mainTitle.innerHTML = rssDoc.selectSingleNode("/rss/channel/title").text;
-
- // Items
-    var rssItems = rssDoc.selectNodes("/rss/channel/item");
- for(var i=0;i<rssItems.length;i++)
- {
-  var item='<li><a href="' + rssItems[i].selectSingleNode("./link").text + '" class="itemTitle">';
-  item+=rssItems[i].selectSingleNode("./title").text
-     item+='</a><br/><div class=item>';
-  item+=rssItems[i].selectSingleNode("./description").text;
-  item+='</div></li>';
-  items.innerHTML+=item;
- }
-
-  }
-</script>
- <style>
- .title{
-  font-family: verdana;
-  font-weight: bold;
- }
- .itemTitle{
-  font-family: verdana;
-  font-size: 10pt;
- }
- .item{
-  font-family: verdana;
-  font-size: 10pt;
- }
- </style>
 </head>
 
 <header>
@@ -88,15 +40,8 @@
 	</nav>
 </header>
 <body>
-	<form>
-<input id="rssPath" value="rss.xml">&nbsp;<button onload="displayRSS('http://cls20.bullhornstaffing.com/JobBoard/Standard/JobOpportunitiesRSS.cfm?privateLabelID=8901&category=')">Ok</button>
-</form>
- <a id="mainTitle" href="" class="title"></a><br>
- <div>
-  <ul>
-   <span id="items"></span>
-  </ul>
- </div>
+	<div class="hire-jobs"></div>
+<script id="hire-embed-loader" async defer src="https://hire.withgoogle.com/s/embed/hire-jobs.js?company=careerstrategyinccom"></script>
 </body>
 <section id="rssfeed">	
 	<script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fcls20.bullhornstaffing.com%2FJobBoard%2FStandard%2FJobOpportunitiesRSS.cfm%3FprivateLabelID%3D8901%26category%3D&chan=y&targ=y&utf=y&pc=y&html=a"  charset="UTF-8" type="text/javascript"></script>
